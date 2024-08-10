@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import React from 'react'
 import { Button } from '../ui/button'
+import Link from 'next/link'
 
 function HeroSection() {
   return (
@@ -13,7 +14,8 @@ function HeroSection() {
             <p className='text-2xl md:text-3xl lg:4xl font-bold text-center'>
                 Vote and find your best choice
             </p>
-            <Button className='mt-3'>Start Free</Button>
+            
+            <Link href='/login'><Button className='mt-3'>Start Free</Button></Link>
         </div>
     </div>
   )

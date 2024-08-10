@@ -3,6 +3,8 @@ import "dotenv/config"
 const app:Application=express()
 const PORT= process.env.PORT || 7000
 import path from 'path'
+import { fileURLToPath } from "url";
+const __dirname= path.dirname(fileURLToPath(import.meta.url))
 
 app.use(express.json())
 app.use(express.urlencoded({extended:false}))
